@@ -1,12 +1,16 @@
 import React from 'react'
 import Navbar from './pages/navbar'
 import Login from './pages/Login'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 function App() {
   return (
-    <div className='bg-[url("assets/bg.jpg")] bg-cover bg-center h-screen'>
-   <Login/>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/navbar" element={<Navbar />} />
+      </Routes>
+    </Router>
     
   )
 }

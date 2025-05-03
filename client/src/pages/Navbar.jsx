@@ -2,6 +2,7 @@ import React from 'react'
 import Todoinput from './Todoinput'
 import Todocomponent from './Todocomponent'
 
+
 function Navbar() {
   return (
     <div className="flex flex-row opacity-80 h-full gap-14">
