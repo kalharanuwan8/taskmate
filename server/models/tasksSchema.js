@@ -1,12 +1,12 @@
 import mongoose from 'mongoose'
 
-const userschema = new mongoose.Schema({
+const taskschema = new mongoose.Schema({
     description: {
         type: String,
         required: true
     }
 });
 
-const User = mongoose.model('todolist', userschema)
+const Task = mongoose.model('todolist', taskschema)
 
-export default User;
+export default Task;
